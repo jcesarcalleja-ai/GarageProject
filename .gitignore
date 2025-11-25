@@ -1,0 +1,17 @@
+# TwinCAT temporary files
+*.tpy
+*.tclrs
+*.compiled-library
+*.library
+*.lib
+*.obj
+*.exp
+*.ilk
+*.pdb
+*.suo
+*.sln.docstates
+*_Boot/
+*/_CompileInfo/
+*.bak
+*.tnzip
+.vs/
