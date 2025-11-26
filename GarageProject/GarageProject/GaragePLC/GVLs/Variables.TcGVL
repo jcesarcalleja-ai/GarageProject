@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <GVL Name="Variables" Id="{a9a6ec33-2a75-406e-b38a-ade54feabb95}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	Button_Open : BOOL;
+	Button_Close : BOOL;
+	Sensor_Open : BOOL;
+	Sensor_Close : BOOL;
+	System_Status : String := 'READY';
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
