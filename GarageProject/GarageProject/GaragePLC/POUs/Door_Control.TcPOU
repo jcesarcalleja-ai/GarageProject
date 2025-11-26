@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Door_Control" Id="{f0de98ce-e84a-488c-b523-ef1d5b401766}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Door_Control
+VAR
+	State : INT :=0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE State OF
+	0:
+	IF Variables.Button_Open THEN
+		State :=10;
+	END_IF
+	
+	10:
+	IF Variables.Sensor_Open THEN
+		State :=20;
+	END_IF
+	
+	20:
+	IF Variables.Button_Close THEN
+		State := 30;
+	END_IF
+	
+	30: 
+	IF Variables.Sensor_Close THEN
+		State :=0;
+	END_IF
+END_CASE]]></ST>
+    </Implementation>
+    <LineIds Name="Door_Control">
+      <LineId Id="5" Count="0" />
+      <LineId Id="7" Count="0" />
+      <LineId Id="9" Count="17" />
+      <LineId Id="8" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
