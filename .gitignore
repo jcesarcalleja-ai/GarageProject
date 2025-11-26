@@ -15,3 +15,5 @@
 *.bak
 *.tnzip
 .vs/
+*.~u
+*.project.~u
