@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Light_Control" Id="{7c8fc835-dfdf-405f-b744-e4b0b6e6c1e6}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Light_Control
+VAR
+	Timer : TOF;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Timer(IN :=Variables.Motor_Moving,PT := T#10S);
+Variables.Light_Output := Timer.Q;]]></ST>
+    </Implementation>
+    <LineIds Name="Light_Control">
+      <LineId Id="5" Count="0" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -6,7 +6,9 @@
 	Button_Close : BOOL;
 	Sensor_Open : BOOL;
 	Sensor_Close : BOOL;
-	System_Status : String := 'READY';
+	System_Status : STRING := 'READY';
+	Motor_Moving : BOOL;
+	Light_Output : BOOL;
 	
 END_VAR]]></Declaration>
   </GVL>
