@@ -7,7 +7,10 @@ Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "GarageProject", "GarageProj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE9343FD-49F3-4267-B566-A4BB9BDD70C1}"
 	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
+		Communication.md = Communication.md
+		Safety.md = Safety.md
+		States.md = States.md
+		States2.md = States2.md
 	EndProjectSection
 EndProject
 Global
