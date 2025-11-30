@@ -1,6 +1,3 @@
-```text
-# State Diagram: Light Task
-
 ### Task 2: Light Control
 Light logic with timer.
 

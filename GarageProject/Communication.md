@@ -1,6 +1,3 @@
-```text
-# Communication Diagram
-
 ### Task Interaction
 How tasks talk using variables.
 

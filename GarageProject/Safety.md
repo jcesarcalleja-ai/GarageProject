@@ -1,6 +1,3 @@
-```text
-# Safety Function Diagram
-
 ### Function Call: Safety
 Safety check logic.
 
