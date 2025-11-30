@@ -9,6 +9,7 @@
 	System_Status : STRING := 'READY';
 	Motor_Moving : BOOL;
 	Light_Output : BOOL;
+	Safety_Sensor :BOOL;
 	
 END_VAR]]></Declaration>
   </GVL>

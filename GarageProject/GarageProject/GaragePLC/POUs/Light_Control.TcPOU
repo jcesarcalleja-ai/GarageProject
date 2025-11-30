@@ -7,8 +7,8 @@ VAR
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[Timer(IN :=Variables.Motor_Moving,PT := T#10S);
-Variables.Light_Output := Timer.Q;]]></ST>
+      <ST><![CDATA[Timer(IN :=Variables.Motor_Moving,PT := T#10S); //When the motor stops the light stays on for 10 more seconds
+Variables.Light_Output := Timer.Q; //The light stays on if the timer is running]]></ST>
     </Implementation>
     <LineIds Name="Light_Control">
       <LineId Id="5" Count="0" />

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <POU Name="Safety" Id="{c033ce95-c04b-4aed-9409-cf1159682b9d}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION Safety : BOOL
+VAR_INPUT
+	Obstacle : BOOL;
+END_VAR
+VAR
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF Obstacle =TRUE THEN		// IF there is an obstacle it is not safe
+	Safety := FALSE;
+	ELSE
+		Safety :=TRUE;		// If there is not an obstacle it is safe
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="Safety">
+      <LineId Id="15" Count="3" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

@@ -4,35 +4,63 @@
     <Declaration><![CDATA[PROGRAM Door_Control
 VAR
 	State : INT :=0;
+	Safety_Ok : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[CASE State OF
-	0:
+	0: 	//Idle state 
+	Variables.Motor_Moving :=FALSE;
+	//Wait for open button
 	IF Variables.Button_Open THEN
 		State :=10;
 	END_IF
 	
-	10:
-	IF Variables.Sensor_Open THEN
-		State :=20;
+	10:	// Opening
+	Safety_Ok := Safety(Variables.Safety_Sensor); // Check if it is safe
+	IF Safety_OK = TRUE THEN
+		Variables.Motor_Moving := TRUE; //Tell light task to turn on
+		IF Variables.Sensor_Open THEN //Check if door reached the top
+			State :=20;
+		END_IF
+	ELSE 
+		State := 0; // Emergency stop
 	END_IF
 	
-	20:
-	IF Variables.Button_Close THEN
+	20:	//Opened
+	Variables.Motor_Moving :=FALSE
+	IF Variables.Button_Close THEN 	// Wait for close button
 		State := 30;
 	END_IF
 	
-	30: 
-	IF Variables.Sensor_Close THEN
+	30: //Closing
+	Safety_Ok := Safety(Variables.Safety_Sensor); //Checking safety
+	IF Safety_Ok = TRUE THEN
+		Variables.Motor_Moving := TRUE;
+	
+	IF Variables.Sensor_Close THEN //Check if door reached the bottom
 		State :=0;
+	END_IF
+	ELSE
+		State :=20; // If  there is an obstacle open
 	END_IF
 END_CASE]]></ST>
     </Implementation>
     <LineIds Name="Door_Control">
       <LineId Id="5" Count="0" />
       <LineId Id="7" Count="0" />
-      <LineId Id="9" Count="17" />
+      <LineId Id="28" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="9" Count="4" />
+      <LineId Id="29" Count="2" />
+      <LineId Id="14" Count="2" />
+      <LineId Id="33" Count="2" />
+      <LineId Id="17" Count="1" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="19" Count="4" />
+      <LineId Id="37" Count="3" />
+      <LineId Id="24" Count="2" />
+      <LineId Id="41" Count="2" />
       <LineId Id="8" Count="0" />
     </LineIds>
   </POU>
