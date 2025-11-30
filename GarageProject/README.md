@@ -1,7 +1,9 @@
 # Garage Project
 
-## 1. State Diagram
-Door state machine logic.
+## 1. State Diagrams
+
+### Task 1: Door Control (Motor)
+State machine for the door logic.
 
 ```mermaid
 stateDiagram-v2
@@ -17,11 +19,7 @@ stateDiagram-v2
     30 --> 0 : Sensor_Close
     30 --> 20 : Safety_Ok = FALSE
 
-### Task 2: Light_Control (Light)
-Logica de la luz.
-
-```mermaid
-stateDiagram-v2
+	stateDiagram-v2
     [*] --> Off
     
     Off --> On : Motor_Moving = TRUE
