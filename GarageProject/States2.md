@@ -12,4 +12,4 @@ stateDiagram-v2
     
     On --> Off : Timer finishes (10s)
     On --> On : Motor_Moving = TRUE (Reset)
-	```
+```

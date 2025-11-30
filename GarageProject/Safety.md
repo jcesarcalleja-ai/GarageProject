@@ -15,4 +15,4 @@ sequenceDiagram
         Safety-->>Door_Control: TRUE
         Note left of Door_Control: Safety_Ok := TRUE
     end
-	```
+```
