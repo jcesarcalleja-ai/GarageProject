@@ -15,3 +15,4 @@ sequenceDiagram
     Variables->>Light_Control: Reads variable
     
     Note right of Light_Control: Waits 10s and turns OFF
+	```

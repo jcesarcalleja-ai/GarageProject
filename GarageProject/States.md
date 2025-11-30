@@ -14,3 +14,4 @@ stateDiagram-v2
     
     30 --> 0 : Sensor_Close
     30 --> 20 : Safety_Ok = FALSE
+	```
