@@ -10,7 +10,7 @@
 		</System>
 		<Plc>
 			<Project GUID="{C3BD507C-955B-491E-AA4A-24ADE85727DE}" Name="GaragePLC" PrjFilePath="GaragePLC\GaragePLC.plcproj" TmcFilePath="GaragePLC\GaragePLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{BEDE741F-12ED-DD88-89BF-20A23982BCCF}">
+				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="GaragePLC\GaragePLC.tmc" TmcHash="{8183893E-5B85-2732-D665-2216241AD58B}">
 					<Name>GaragePLC Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 					<Contexts>
