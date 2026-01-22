@@ -1,0 +1,11 @@
+@startuml
+title Task 2: Light Control
+hide empty description
+
+[*] --> Off
+
+Off --> On : Motor_Moving = TRUE
+
+On --> Off : Timer finishes (10s)
+On --> On : Motor_Moving = TRUE (Reset)
+@enduml

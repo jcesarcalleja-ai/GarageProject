@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <Task Name="Task_5" Id="{11504f28-3b0f-4590-910b-6c94a36ff187}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>10000</CycleTime>
+    <Priority>22</Priority>
+    <PouCall>
+      <Name>Light_Control</Name>
+    </PouCall>
+    <TaskFBGuid>{16d78e7d-f4e0-4922-ab50-3acb45693d9a}</TaskFBGuid>
+    <Fb_init>{fc178b32-5e5c-4273-890d-0a96fd6aea28}</Fb_init>
+    <Fb_exit>{c89cac8a-9c93-4308-ab86-959fff4d1a1c}</Fb_exit>
+    <CycleUpdate>{440ba2f0-7d56-4447-b743-9af90227d4ae}</CycleUpdate>
+    <PostCycleUpdate>{28b8fc63-08a0-4a73-98b0-d5921e46e0b3}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

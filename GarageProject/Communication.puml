@@ -1,0 +1,18 @@
+@startuml
+title Task Interaction
+hide footbox
+
+participant Door_Control
+participant Variables
+participant Light_Control
+
+Door_Control -> Variables : Motor_Moving = TRUE
+Variables -> Light_Control : Reads variable
+
+note right of Light_Control : Turns Light ON
+
+Door_Control -> Variables : Motor_Moving = FALSE
+Variables -> Light_Control : Reads variable
+
+note right of Light_Control : Waits 10s and turns OFF
+@enduml

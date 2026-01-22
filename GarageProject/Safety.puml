@@ -1,0 +1,17 @@
+@startuml
+title Safety Function Diagram
+hide footbox
+
+participant Door_Control
+participant Safety
+
+Door_Control -> Safety : Safety_Sensor
+
+alt Obstacle Detected
+    Safety --> Door_Control : FALSE
+    note left of Door_Control : Safety_Ok := FALSE
+else Path Clear
+    Safety --> Door_Control : TRUE
+    note left of Door_Control : Safety_Ok := TRUE
+end
+@enduml

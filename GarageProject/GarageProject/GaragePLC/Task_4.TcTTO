@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.15">
+  <Task Name="Task_4" Id="{5fc53b52-df4f-408e-a701-98853b193712}">
+    <!--CycleTime in micro seconds.-->
+    <CycleTime>10000</CycleTime>
+    <Priority>21</Priority>
+    <PouCall>
+      <Name>Door_Control</Name>
+    </PouCall>
+    <TaskFBGuid>{e5de384e-665d-4ca0-8c27-8b12f0b6c806}</TaskFBGuid>
+    <Fb_init>{9b3ed1f3-9279-49e4-b4e4-e0ef0021c046}</Fb_init>
+    <Fb_exit>{58169c1f-633d-47e9-bfd8-3d4ec2cc9639}</Fb_exit>
+    <CycleUpdate>{151dce94-c2e4-40a9-a0f2-ea71731f0777}</CycleUpdate>
+    <PostCycleUpdate>{bc9c7723-a753-477f-a6bd-c3f899ce3a21}</PostCycleUpdate>
+  </Task>
+</TcPlcObject>

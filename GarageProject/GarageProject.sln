@@ -7,10 +7,10 @@ Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "GarageProject", "GarageProj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE9343FD-49F3-4267-B566-A4BB9BDD70C1}"
 	ProjectSection(SolutionItems) = preProject
-		Communication.md = Communication.md
-		Safety.md = Safety.md
-		States.md = States.md
-		States2.md = States2.md
+		Communication.puml = Communication.puml
+		Safety.puml = Safety.puml
+		States.puml = States.puml
+		States2.puml = States2.puml
 	EndProjectSection
 EndProject
 Global
